@@ -1,3 +1,0 @@
-/Users/stanleyramsay/dev/server/build/CMakeFiles/server.dir
-/Users/stanleyramsay/dev/server/build/CMakeFiles/edit_cache.dir
-/Users/stanleyramsay/dev/server/build/CMakeFiles/rebuild_cache.dir

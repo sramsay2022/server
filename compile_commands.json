@@ -1,8 +1,0 @@
-[
-{
-  "directory": "/Users/stanleyramsay/dev/server/build",
-  "command": "/usr/bin/clang++   -g -std=gnu++20 -arch arm64 -Wall -Wextra -Wpedantic -g -O0 -fno-omit-frame-pointer -fstandalone-debug -o CMakeFiles/server.dir/main.cpp.o -c /Users/stanleyramsay/dev/server/main.cpp",
-  "file": "/Users/stanleyramsay/dev/server/main.cpp",
-  "output": "CMakeFiles/server.dir/main.cpp.o"
-}
-]
