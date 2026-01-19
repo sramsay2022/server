@@ -1,0 +1,61 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "CMake Configure",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "--preset",
+                "default"
+            ]
+        },
+        {
+            "label": "CMake Build",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "--build",
+                "--preset",
+                "default"
+            ],
+            "dependsOn": [
+                "CMake Configure"
+            ]
+        },
+        {
+            "label": "CMake Configure (tests)",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "--preset",
+                "tests"
+            ]
+        },
+        {
+            "label": "CMake Build (tests)",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "--build",
+                "--preset",
+                "tests"
+            ],
+            "dependsOn": [
+                "CMake Configure (tests)"
+            ]
+        },
+        {
+            "label": "Run Unit Tests",
+            "type": "shell",
+            "command": "ctest",
+            "args": [
+                "--preset",
+                "tests"
+            ],
+            "dependsOn": [
+                "CMake Build (tests)"
+            ]
+        }
+    ]
+}
